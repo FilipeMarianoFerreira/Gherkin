@@ -11,7 +11,7 @@ Funcionalidade: Login na plataforma
   Esquema do Cenário: Tentativa de login com diferentes combinações de credenciais
     Quando insiro o usuário "<usuario>" e a senha "<senha>"
     E clico no botão "Entrar"
-    Então o sistema deve "<resultado>"
+    Então o sistema deve exibir o "<resultado>"
 
     Exemplos:
       | usuario         | senha          | resultado                                  |
@@ -20,3 +20,4 @@ Funcionalidade: Login na plataforma
       |                 | senha123       | exibir a mensagem "Usuário ou senha inválidos" |
       | joao@email.com  | senhaErrada    | exibir a mensagem "Usuário ou senha inválidos" |
       | errado@email.com| senha123       | exibir a mensagem "Usuário ou senha inválidos" |
+
