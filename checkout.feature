@@ -9,11 +9,8 @@ Funcionalidade: Cadastro de cliente no checkout
     Dado que estou na tela de cadastro no checkout
 
   Esquema do Cenário: Validação dos dados obrigatórios e formato do e-mail
-    Quando preencho os campos obrigatórios com:
-      | nome         | sobrenome   | email               | senha     |
-      | <nome>       | <sobrenome> | <email>             | <senha>   |
-    E clico no botão "Cadastrar"
-    Então o sistema deve "<resultado>"
+  Quando preencho os campos obrigatórios com <nome>, <sobrenome>, <email>, <senha> e clico no botão "Cadastrar"
+  Então o sistema deve exibir "<resultado>"
 
     Exemplos:
       | nome     | sobrenome | email               | senha     | resultado                                           |
@@ -23,3 +20,4 @@ Funcionalidade: Cadastro de cliente no checkout
       |          | Silva     | ana@dominio.com     | 123456    | exibir mensagem de alerta: "Preencha todos os campos obrigatórios" |
       | Ana      |           | ana@dominio.com     | 123456    | exibir mensagem de alerta: "Preencha todos os campos obrigatórios" |
       | Ana      | Silva     | ana@dominio.com     |           | exibir mensagem de alerta: "Preencha todos os campos obrigatórios" |
+
