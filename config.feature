@@ -10,10 +10,8 @@ Funcionalidade: Configuração de produto
     Dado que estou na página de detalhes de um produto
 
   Esquema do Cenário: Validação das seleções obrigatórias e quantidade permitida
-    Quando seleciono a cor "<cor>"
-    E seleciono o tamanho "<tamanho>"
-    E seleciono a quantidade "<quantidade>"
-    Então o botão "Adicionar ao carrinho" deve estar "<estado_botao>"
+  Quando seleciono a <cor>, <tamanho> e a <quantidade>
+  Então o botão "Adicionar ao carrinho" deve estar "<estado_botao>"
 
     Exemplos:
       | cor     | tamanho | quantidade | estado_botao        |
